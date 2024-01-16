@@ -166,8 +166,10 @@ ul li:hover .submenu {
 
 /* Navbar */
 .hero{
-    font-family: 'Cute Font', 'Rubik Doodle Shadow','sans-serif';
-    height: 85%;
+    font-family: 'Rubik Lines', system-ui;
+    /* font-family: 'Changa One', sans-serif; */
+    /* font-family: 'Cute Font', 'Rubik Doodle Shadow','sans-serif'; */
+    height: 80%;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -176,22 +178,97 @@ ul li:hover .submenu {
     position: relative;
     gap: 93px;
     padding: 0 30px;
-    border: 2px solid red;
+    /* border: 2px solid red;  */
     /* z-index: 10; */
-}
-
-.hero> :first-child{
-    font-family: 'Cute Font', 'Rubik Doodle Shadow','sans-serif';
-    font-size: 120px;
-    font-weight: 600;
-    border: 2px solid blue;
-}
-.hero> :nth-child(2){
+    animation: appear 1s forwards;
+  }
+  @keyframes appear {
+    from {
+       transform: scale(0.3);
+    }
+    to {
+       transform: scale(1);
+    }
+   }
+   .hero> :first-child{
+    font-family: 'Changa One', sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #00f7bd 0%,
+      #c4ee1cc4 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    /* color: #fff; */
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 140px;
+  }
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  .hero> :nth-child(2){    
     font-size: 50px;
     font-weight: 600;
-    border: 2px solid blue;
-}
+    /* border: 2px solid blue; */
+    animation: jump 2s infinite;
+     text-shadow: 3px 2px 2px #0e74b8c9  ;
+     font-family: 'Dancing Script', cursive;
+    font-size: 2rem ;
+  }
 
+  @media screen and (max-width: 1200px) {
+    .hero > :first-child {
+    font-size: 120px; }
+    .hero > :nth-child(2){
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .hero > :first-child {
+    font-size: 100px; }
+    .hero > :nth-child(2){
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 880px) {
+    .hero > :first-child {
+    font-size: 70px; }
+    .hero > :nth-child(2){
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .hero > :first-child {
+      flex-direction: column;
+      font-size: 38px; 
+      
+    } 
+    .hero > :nth-child(2){
+      font-size: 18px;
+    }
+  }
+
+  @keyframes jump { 0% { transform: translateY(0px); }
+
+  50% { transform: translateY(-10px); }
+  
+  100% { transform: translateY(0px); } }
+  
 .btn-home {
     padding: 10px 25px;
     border: none;
@@ -223,29 +300,98 @@ ul li:hover .submenu {
     max-width: 80vw;
     align-items: center;
     color: white;
+    margin-top: 60px;
     margin-bottom: 50px;
-    border: 2px solid greenyellow;
+    border: auto;
 }
 .teamImg img{
-    width: 25vw;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    position: relative;
-    border: 2px solid red;
-}
-.aboutHeading{
-    font-size: 50px;
+    flex-wrap: nowrap;
+    display: block;
+      width: 20vw;
+     margin-bottom: 15px;
+       flex: 1;
+       overflow: hidden;
+       /* height: max-content; */
+       object-fit: cover;
+       position: static;
+      /* position: relative; */
+      height: auto;
+      border: 2px solid red;
+  }
+  .aboutHeading{
+    font-size: 42px;
+    text-shadow: #5a3c3c;
     padding: 10px;
     color: white;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    font-family: 'Lilita One', sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(51, 73, 214);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: sticky;
+width: 100% ;
+
 }
 .aboutContent{
+    flex-wrap: wrap;
     font-size: 20px;
-    padding: 20px;
-    text-align: justify;
-    margin-right: 150px;
-    border: 2px solid red;
-}
+    margin-top: 10px;
+     border: 2px solid red;
+    height: auto;
+    transition-duration: 1.1s;
+    font-family: 'Lilita One', sans-serif;
+    flex: 2;
+    box-sizing: border-box;
+    flex-direction: column; 
+    background-color: rgba(8, 32, 50, 0.6);
+    border-radius: 0.5rem;
+    transition: ease-out 0.3s;
+    padding: 0rem 0.5rem;
+    margin-left: 20px;
+    line-height: 2rem;
+    color: #eeeeee;
+  }
+  .aboutContent:hover{
+    background-color: rgb(228, 105, 128);
+    border-radius: 5px;
+    transition-duration: 1.1s;
+    transform-style: preserve-3d;
+    color: rgb(24, 44, 44);
+    }
+    
+    
+       @media screen and (max-width: 900px) {
+        .aboutHeading{
+          margin-top: 50px;
+        }
+        .aboutContent{
+            margin-right: 0;
+        }
+        .about {
+            flex-direction: column; 
+            margin-top: 60px;
+        }
+        .teamImg img {
+          margin-top: 0;
+            width: 70vw;
+        }}
+    
+      .teamImg {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+    
+    
+      .content-container {
+            flex: none;
+           width: 100%;
+          
+        }
+    
 
 .speakersHeading{
     font-size: 50px;
