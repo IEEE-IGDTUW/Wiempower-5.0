@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <style>
+            /* CSS for the animated 'coming soon' text */
+            .speakersContent {
+                font-size: 40px;
+                text-align: center;
+                color: #fff;
+                margin-top: 25px;
+                animation: pulse 2s infinite;
+            }
+
+            @keyframes pulse {
+                0% { opacity: 0.5; }
+                50% { opacity: 1; }
+                100% { opacity: 0.5; }
+            }
+        </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="assets\img\wie(no background).png" type="image/x-icon">
+<title>WIEMPOWER</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
+
+    <script src="script.js"></script>
+
+    <div class="main">
+        <div class="bg">
+            <nav>
+                <div class="logo left">
+                    <img class="ieee-logo" width="100" src="assets/img/LOGOBW.png" alt="IEEE IGDTUW logo">
+                </div>
+                <div class="logo right">
+                    <img class="wie-logo" width="100" src="assets/img/wie(no background).png" alt="WIE IGDTUW logo">
+                </div>
+
+
+                <div class="centered">
+
+                    <ul class="navbar menu">
+                        <li><a href="index.html" target="_blank" class="menu">Home</a></li>
+                        <li><a href="about.html" target="_blank" class="menu">About</a></li>
+                        <li>
+                            <a href="#" class="menu">
+                                Register
+                                <ul class="submenu">
+                                    <li><a href="#">FACE DETECTION USING VIOLA JONES ALGORITHM</a></li>
+                                    <li><a href="#">GATE AWARENESS SEMINAR</a></li>
+                                    <li><a href="#">Code-O-Fiesta 3.0</a></li>
+                                    <li><a href="#">Getting Started With MATLAB</a></li>
+                                    <li><a href="#">Hack4Change</a></li>
+                                    <li><a href="#">How To Overcome The Fear Of Internships/Placements</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li><a href="" class="menu">Events</a></li>
+                        <li><a href="#contact" class="menu">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="box"></div>
+        <div class="hero">
+            <span> WIEMPOWER 5.0</span>
+            <span>Shaping the Future of Women in STEM</span>
+            <!-- <span></span> -->
+            <div><button class="btn-home">Register</button></div>
+        </div>
+        <!-- <div class="separation"></div> -->
+
+    </div>
+    <section class="about">
+        <div>
+            <div class="aboutHeading">What is WIEmpower?</div>
+            <div class="aboutContent">WIEmpower is the flagship event organised by IEEE IGDTUW and IEEE Delhi Section.WIEmpower aims towards the empowerment of women in STEM. Various events such as workshops, competitions etc. are organised during WIEmpower.</div>
+
+        </div>
+        <div class="teamImg">
+            <img src="assets/img/teamImageIEEE.jpeg" alt="IEEE IGDTUW Team 2023-24">
+        </div>
+    </section>
+    <section class="speakers">
+        <div>
+            <div class="speakersHeading">Speakers</div>
+            <div class="speakersContent coming-soon">Coming Soon</div>
+        
+        <!--  <div>
+          <div class="speakersHeading">Speakers</div>
+          <div class="speakersContent">Speakers Content will come here!</div>
+          <!-- Carousel Code begins -->
+        <!--   <div id="speakersCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-pause="hover">
+               <div class="carousel-indicators">
+                   <button type="button" data-bs-target="#speakersCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                   <button type="button" data-bs-target="#speakersCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                   <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button> -->
+        <!--     </div>   -->
+        <!--           <div class="carousel-inner">
+                   <div class="carousel-item active">
+                       <div class="cards-wrapper">
+                           <div class="card">
+                               <div class="image-wrapper">
+                                   <img src="assets/img/EigenTechnologiesWorkshop.jpeg" class="card-img-top" alt="EigenWorkshopImage">
+                               </div>
+                               <div class="card-body">
+                                   <h5 class="card-title">Mr. ABC XYZ</h5>
+                                   <p class="card-text">Director, ABC Institute of technology</p>
+                                   <a href="assets/videos/20231006_143719.mp4" class="btn btn-primary">Profile</a>
+                               </div>
+                           </div>
+                           <div class="card">
+                               <div class="image-wrapper">
+                                   <img src="assets/img/IEEEDrivesession.jpeg" class="card-img-top" alt="...">
+                               </div>
+                               <div class="card-body">
+                                   <h5 class="card-title">Mr. ABC XYZ</h5>
+                                   <p class="card-text">TEDX Speaker</p>
+                                   <a href="https://www.instagram.com/p/Cxnfsj8SFwn/?igsh=MWlneWRmZnQ0aGNpNQ==" class="btn btn-primary">Profile</a>
+                               </div>
+                           </div>
+                           <div class="card">
+                               <div class="image-wrapper">
+                                   <img src="assets/img/YPupskillEvent.JPG" class="card-img-top" alt="...">
+                               </div>
+                               <div class="card-body">
+                                   <h5 class="card-title">Mr. ABC XYZ</h5>
+                                   <p class="card-text">Professor, ABC Institute of Technology</p>
+                                   <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTkzNDE4OTQ3MDcxNDYw?story_media_id=3200575220553829667&igsh=eTRsdHBzeHR0N24w" class="btn btn-primary">Profile</a>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- <div class="carousel-caption d-none d-md-block">
+                     <h5>First slide label</h5>
+                     <p>Some representative placeholder content for the first slide.</p>
+                   </div> -->
+     <!--   </div>
+        <!--<div class="carousel-item">
+        <div class="cards-wrapper">
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="assets/img/Leadership&Entrepreneurship.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Mr. ABC XYZ</h5>
+                    <p class="card-text">Assistant Manager, IIM</p>
+                    <a href="https://www.instagram.com/p/Cxclw3KSMvb/?igsh=NHhtNHVzY3U2dGhi" class="btn btn-primary">Profile</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="assets/img/Semiconductors2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Mr. ABC XYZ</h5>
+                    <p class="card-text">Assiatnt Professor</p>
+                    <a href="https://www.instagram.com/p/CxfJanxSSRb/?igsh=MXA1MGs0bTY1cWJxeQ==" class="btn btn-primary">Profile</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-wrapper">
+                    <img src="assets/img/SamBaislaSession.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Mr. ABC XYZ</h5>
+                    <p class="card-text">SDE-3, ABC Industries</p>
+                    <a href="https://www.instagram.com/p/CxTPH7-Swp0/?igsh=MWVsZGRoeDRoOTB6Ng==" class="btn btn-primary">Profile</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#speakersCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#speakersCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <!-- Big screen carousel ends -->
+        <!------------- Speakers Carousel ends here ----------->
+        </div>
+    </section>
+    <section class="pastActs">
+        <div>
+            <div class="actsHeading">Our Past Activities</div>
+            <!-- <div class="speakersContent">Speakers will come here</div> -->
+            <!-- Carousel Code begins -->
+            <div id="pastActsCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-pause="hover">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#pastActsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#pastActsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#pastActsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#pastActsCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/EigenTechnologiesWorkshop.jpeg" class="card-img-top" alt="EigenWorkshopImage">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">IOT Workshop by Eigen Technologies</h5>
+                                    <p class="card-text">6th October, 2023</p>
+                                    <a href="assets/videos/20231006_143719.mp4" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/IEEEDrivesession.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Unlocking IEEE : Inspire, Connect and Lead</h5>
+                                    <p class="card-text">26th September, 2023</p>
+                                    <a href="https://www.instagram.com/p/Cxnfsj8SFwn/?igsh=MWlneWRmZnQ0aGNpNQ==" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/YPupskillEvent.JPG" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">R10 Young Professionals Upskill Delhi 2023</h5>
+                                    <p class="card-text">23rd-24th September 2023</p>
+                                    <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTkzNDE4OTQ3MDcxNDYw?story_media_id=3200575220553829667&igsh=eTRsdHBzeHR0N24w" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div> -->
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/Leadership&Entrepreneurship.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Panel Discussion on Leadership and Entrepreneurship</h5>
+                                    <p class="card-text">24th September, 2023</p>
+                                    <a href="https://www.instagram.com/p/Cxclw3KSMvb/?igsh=NHhtNHVzY3U2dGhi" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/Semiconductors2.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Semiconductors- Fueling India's Innovation: A Visionary Panel Discussion</h5>
+                                    <p class="card-text">23rd September, 2023.</p>
+                                    <a href="https://www.instagram.com/p/CxfJanxSSRb/?igsh=MXA1MGs0bTY1cWJxeQ==" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/SamBaislaSession.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Unveiling Entrepreneur's Odyssey Navigating the Entrepreneurial Landscape by Sam Baisla</h5>
+                                    <p class="card-text">23rd September, 2023</p>
+                                    <a href="https://www.instagram.com/p/CxTPH7-Swp0/?igsh=MWVsZGRoeDRoOTB6Ng==" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div> -->
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/RakshitSatijasesssion.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Exploring the Synergy: IEEE and Entrepreneurship by Rakshit Satija</h5>
+                                    <p class="card-text">23rd September, 2023</p>
+                                    <a href="https://www.instagram.com/p/CxXXELvSIWc/?igsh=bml2OW1yaHhiZTBl" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/InternshipNavigator.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Internship and Placement Navigator Session in collaboration with MISAHUB</h5>
+                                    <p class="card-text">28th August, 2023</p>
+                                    <a href="https://www.instagram.com/p/Cwc-VTnSc2Y/?igsh=MWIxMnJ1NXV2aGY2NQ==" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/MATLABsession.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Session on Getting Started with MATLAB by Garmit Pant</h5>
+                                    <p class="card-text">23rd March, 2023</p>
+                                    <a href="assets/Event reports/Getting Started with MATLAB.pdf" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div> -->
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/UtkarshGuptaSession.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">How to Overcome the Fear of Internships/Placements by Utkarsh Gupta</h5>
+                                    <p class="card-text">24th March, 2023</p>
+                                    <a href="assets/Event reports/UtkarshSession.pdf" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/Code-O-Fiesta 3.0.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Code-O-Fiesta 3.0 in collaboration with Newton School</h5>
+                                    <p class="card-text">22nd March, 2023</p>
+                                    <a href="assets/Event reports/Code-O-Fiesta-3.0.pdf" class="btn btn-primary">Check Highlights</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/img/Hack4Change.jpeg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Hack4Change Hackathon: Collaborate, Create, Impact</h5>
+                                    <p class="card-text">20th March, 2023</p>
+                                    <a href="assets/Event reports/Hack4Change.pdf" class="btn btn-primary">Check Highlights</a>
+
+                                </div>
+                            </div>
+                            <!-- </div>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Fourth slide label</h5>
+                              <p>Some representative placeholder content for the fourth slide.</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#pastActsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#pastActsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- Big screen carousel ends -->
+    </section>
+    <div class="line">
+
+    </div>
+    <section>
+        <footer id="contact">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 footCol">
+                    <h3>Connect with Us</h3>
+                    <div class="Icons">
+                        <a target="_blank" href="https://www.facebook.com/ieeeigdtuw/"><i class='fab fa-facebook'></i></a>
+                        <a target="_blank" href="https://www.instagram.com/ieeeigdtuw/"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/ieee-igdtuw/mycompany/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 footCol">
+                    <h3>WiEmpower Over The Years</h3>
+                    <ul class="usefulLinks">
+                        <li><a target="_blank" href="https://ieee-igdtuw.github.io/wie-website/index.html">WIEmpower 4.0</a></li>
+                        <li><a target="_blank" href="https://igdtuw19ieee.github.io/WIEmpower/colorlib.com/preview/theme/plataforma/index.html">WIEmpower 3.0</a></li>
+                        <li><a target="_blank" href="https://igdtuw19ieee.github.io/WIEmpower/colorlib.com/preview/theme/plataforma/about2.html">WIEmpower 2.0</a></li>
+                        <li><a target="_blank" href="https://igdtuw19ieee.github.io/WIEmpower/colorlib.com/preview/theme/plataforma/about.html">WIEmpower 1.0</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 footCol">
+                    <h3>Contact Us</h3>
+                    <div class="Col">
+                        <ul class="contactDetails">
+                            <li>
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <span class="details">
+                                    Indira Gandhi Delhi Technical University for Women,<br>
+                                    New Church Rd, Opp. St James Church, Kashmere Gate, Delhi 110006
+                                </span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-envelope"></i></span>
+                                <span class="details">
+                                    <a href="mailto:igdtuieee@gmail.com">igdtuieee@gmail.com,</a><br>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright ©2021 All rights reserved | IEEE IGDTUW
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
