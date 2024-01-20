@@ -467,6 +467,32 @@ width: 100% ;
 
 
 
+.coming-soon-text {
+  font-family: 'Monoton', cursive; /* Change font to Monoton */
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  animation: bounceColorMotion 3s infinite; /* Animation for a combination of color change and bouncing effect */
+}
+
+@keyframes bounceColorMotion {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+      color: white; /* Set the initial and final color */
+  }
+  40% {
+      transform: translateY(-20px);
+      color: #ffcc00; /* Set the color at the midpoint of the animation */
+  }
+  60% {
+      transform: translateY(-10px);
+      color: #ff3366; /* Set another color at the midpoint of the animation */
+  }
+}
+
+
+
 
 
 
