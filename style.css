@@ -467,6 +467,7 @@ width: 100% ;
 
 
 
+
 .coming-soon-text {
   font-family: 'Monoton', cursive; /* Change font to Monoton */
   font-size: 40px;
@@ -490,7 +491,6 @@ width: 100% ;
       color: #ff3366; /* Set another color at the midpoint of the animation */
   }
 }
-
 
 
 
