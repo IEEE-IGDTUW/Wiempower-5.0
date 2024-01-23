@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    /* background-image: url(1.jpg); */
+}
+body{
+    /* background: #2e364a; */
+    background-image: url("assets/img/bg.jpeg");
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline{
+    /* background: url(bg.jpg); */
+    /* background-image: url(1.jpg);  */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.container{
+    padding: 10px 50px;
+    position: relative;
+    
+    width: 50%;
+    /* width: 50%; */
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: space-between;
+    animation: movedown 3s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 2s;
+}
+.container:nth-child(3){
+    animation-delay: 4s;
+}
+.container:nth-child(4){
+    animation-delay: 6s;
+}
+.container:nth-child(5){
+    animation-delay: 8s;
+}
+
+
+.text-box{
+    padding: 20px 30px;
+    background: #c8f1f1;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    /* margin-top: 100px; */
+}
+
+.button{
+    position:relative;
+    top:50%;
+    background-color:#6666ca;
+    color: #fff;
+    border:none; 
+    font-size: large;
+    border-radius:10px; 
+    padding:19px 50px;
+    width: 100%;
+}
+.button {
+    transition-duration: 0.4s;
+  }
+  
+.button:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+}  
+
+.timeline-img{
+    padding: 10px 50px;
+    width: 50%;
+    position: relative;
+    height: 50%;
+    animation: movedown 3s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.timeline-img:nth-child(1){
+    animation-delay: 0s;
+}
+.timeline-img:nth-child(2){
+    animation-delay: 2s;
+}
+.timeline-img:nth-child(3){
+    animation-delay: 4s;
+}
+.timeline-img:nth-child(4){
+    animation-delay: 6s;
+}
+.timeline-img:nth-child(5){
+    animation-delay: 8s;
+}
+
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+.right-container img{
+    left: -20px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    bottom: 0;
+    height: 200vh;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 26s linear forwards;
+}
+
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 450%;
+    }
+}
+
+.text-box h2{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.text-box h3{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.text-box p{
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+}
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+@media only screen and(min-width:768px){
+    .timeline{
+       margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+        height: 200vh;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .timeline-img{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .timeline-img right container{
+        left: 0;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box h3{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+    .left-container img, .right-container img{
+        left: 10px;
+    }
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+    }
+}

@@ -370,6 +370,7 @@ nav .icons {
 width: 100% ;
 
 }
+
 .aboutContent{
     flex-wrap: wrap;
     font-size: 20px;
@@ -454,8 +455,14 @@ width: 100% ;
     color: white;
     /* border: 2px solid red; */
 }
+@media (max-width: 768px) {
+  .actsHeading {
+      font-size: 30px; 
+      max-width: 75%; 
+  }
+}
 
-@media screen and (min-width:500px) {
+/*@media screen and (min-width:500px) {
     .cards-wrapper{
         display: flex;
     }
@@ -465,11 +472,49 @@ width: 100% ;
     }
     .image-wrapper{
         height: 18vw;
-        /* margin: 0 auto; */
+        margin: 0 auto; 
     }
 
+} */
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between; 
 }
 
+.card {
+  margin: 0 5em;
+  width: calc(30% - 2em); 
+  box-sizing: border-box; 
+}
+
+.image-wrapper {
+  height: 15vw; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .carousel-inner{
+    display: flex;
+    padding: 2 em;
+  }
+  .cards-wrapper {
+      flex-direction: column; 
+      align-items: center; 
+  }
+  .card {
+      margin: 0 0 2 em; 
+      width: 55%; 
+  }
+  .image-wrapper {
+      height: 45vw; 
+  }
+}
 
 @media screen and (max-width: 567px){
     .card:not(:first-child){
@@ -490,6 +535,7 @@ width: 100% ;
     top: 50%;
     transform: translateY(-50%);
 }
+
 
 .line{
     background-color: gray;
@@ -545,6 +591,30 @@ width: 100% ;
     /* margin-left: auto; Push the tagline to the right */
 /* } */
 
+
+.coming-soon-text {
+  font-family: 'Monoton', cursive; /* Change font to Monoton */
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  animation: bounceColorMotion 3s infinite; /* Animation for a combination of color change and bouncing effect */
+}
+
+@keyframes bounceColorMotion {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+      color: white; /* Set the initial and final color */
+  }
+  40% {
+      transform: translateY(-20px);
+      color: #ffcc00; /* Set the color at the midpoint of the animation */
+  }
+  60% {
+      transform: translateY(-10px);
+      color: #ff3366; /* Set another color at the midpoint of the animation */
+  }
+}
 
 /* FOOTER */
 footer {
