@@ -7,11 +7,9 @@ body{
     /* background-color: rgb(11, 78, 83); */
     /* background: linear-gradient(to left, #8942a8,#ba382f); */
         background: rgb(6, 6, 78);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
     overflow-x: hidden;
-       /* animation: gradientAnimation 15s ease infinite */
-    background: linear-gradient(45deg, #0D47A1, #263238, #01579B);
-    background-size: 200% 200%;
-    animation: differentBackgroundAnimation 4s infinite;
 }
 
 .main {
@@ -578,25 +576,6 @@ img{
       color: #ff3366; /* Set another color at the midpoint of the animation */
   }
 }
-
-@keyframes differentBackgroundAnimation {
-    0% {
-      background-position: 0% 0%;
-    }
-    25% {
-      background-position: 100% 0%;
-    }
-    50% {
-      background-position: 100% 100%;
-    }
-    75% {
-      background-position: 0% 100%;
-    }
-    100% {
-      background-position: 0% 0%;
-    }
-  }
-
 
 /* FOOTER */
 footer {
