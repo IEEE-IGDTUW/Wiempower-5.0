@@ -208,13 +208,13 @@ html,body{
     left: -15px;
 }
 
-@media only screen and(min-width:768px){
+@media screen and (max-width: 600px){
     .timeline{
        margin: 50px auto;
     }
     .timeline::after{
         left: 31px;
-        height: 200vh;
+/*         height: 200vh; */
     }
     .container{
         width: 100%;
@@ -228,6 +228,9 @@ html,body{
     }
     .timeline-img right container{
         left: 0;
+    }
+    .timeline-img img{
+        left: 10px;
     }
     .text-box{
         font-size: 13px;
