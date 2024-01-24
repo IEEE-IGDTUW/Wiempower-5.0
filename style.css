@@ -230,6 +230,7 @@ nav .icons {
    .hero> :first-child{
     font-family: 'Changa One', sans-serif;
     text-transform: uppercase;
+    text-align: center;
     background-image: linear-gradient(
       -225deg,
       #00f7bd 0%,
@@ -247,7 +248,8 @@ nav .icons {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-        font-size: 140px;
+        /* font-size: 140px; */
+        font-size: clamp(38px, 10vw, 140px);
   }
   @keyframes textclip {
     to {
@@ -263,38 +265,32 @@ nav .icons {
      text-shadow: 3px 2px 2px #0e74b8c9  ;
      font-family: 'Dancing Script', cursive;
     font-size: 2rem ;
+    text-align: center;
   }
 
   @media screen and (max-width: 1200px) {
-    .hero > :first-child {
-    font-size: 120px; }
+    
     .hero > :nth-child(2){
       font-size: 18px;
     }
   }
   
   @media screen and (max-width: 1000px) {
-    .hero > :first-child {
-    font-size: 100px; }
+   
     .hero > :nth-child(2){
       font-size: 18px;
     }
   }
   
   @media screen and (max-width: 880px) {
-    .hero > :first-child {
-    font-size: 70px; }
+   
     .hero > :nth-child(2){
       font-size: 18px;
     }
   }
   
   @media screen and (max-width: 700px) {
-    .hero > :first-child {
-      flex-direction: column;
-      font-size: 38px; 
-      
-    } 
+   
     .hero > :nth-child(2){
       font-size: 18px;
     }
