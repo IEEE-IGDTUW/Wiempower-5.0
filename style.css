@@ -368,7 +368,7 @@ nav .icons {
        position: static;
       /* position: relative; */
       height: auto;
-      border: 2px solid red;
+/*       border: 2px solid red; */
   }
   .aboutHeading{
     font-size: 42px;
@@ -390,7 +390,7 @@ width: 100% ;
     flex-wrap: wrap;
     font-size: 20px;
     margin-top: 10px;
-     border: 2px solid red;
+/*      border: 2px solid red; */
     height: auto;
     transition-duration: 1.1s;
     font-family: 'Lilita One', sans-serif;
@@ -454,7 +454,7 @@ width: 100% ;
     text-align: center;
     justify-content: center;
     color: white;
-    border: 2px solid red;
+/*     border: 2px solid red; */
 }
 
 
