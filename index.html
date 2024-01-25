@@ -4,11 +4,26 @@
   <style>.coming-soon-text {
     font-family: 'Monoton', cursive; /* Change font to Monoton */
     font-size: 40px;
-    color: white;
+    color: transparent;
     text-align: center;
     margin-top: 50px;
-    animation: bounceColorMotion 3s infinite; /* Animation for a combination of color change and bouncing effect */
-  }</style>
+    animation: effect 2s linear infinite;
+     /* Animation for a combination of color change and bouncing effect */
+  }
+  @keyframes effect {
+            0% {
+                background: linear-gradient(
+                        #008000, #00FF00);
+                -webkit-background-clip: text;
+            }
+ 
+            100% {
+                background: linear-gradient(
+                        orange, yellow
+                        );
+                -webkit-background-clip: text;
+            }
+        }</style>
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,13 +97,20 @@
             </div>
            
                         <!-- Carousel Code begins -->
-                        <div id="speakersCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-pause="hover">
+          
+<!--                         <div id="speakersCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-pause="hover">
                           <div class="carousel-indicators">
                             <button type="button" data-bs-target="#speakersCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#speakersCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+ -->
+<!--                             IGNORE NEXT 2 lines -->
+          
                             <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
                             <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button> -->
-                          </div>
+
+
+          
+<!--                           </div>
                           <div class="carousel-inner">
                             <div class="carousel-item active">
                               <div class="cards-wrapper">
@@ -105,8 +127,8 @@
             <div class="card">
               <div class="image-wrapper">
                   <img src="assets/img/IEEEDrivesession.jpeg" class="card-img-top" alt="...">
-              </div>
-            <div class="card-body">
+              </div> -->
+<!--             <div class="card-body">
               <h5 class="card-title">Mr. ABC XYZ</h5>
               <p class="card-text">TEDX Speaker</p>
               <a href="https://www.instagram.com/p/Cxnfsj8SFwn/?igsh=MWlneWRmZnQ0aGNpNQ==" class="btn btn-primary">Profile</a>
@@ -121,13 +143,17 @@
               <p class="card-text">Professor, ABC Institute of Technology</p>
               <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTkzNDE4OTQ3MDcxNDYw?story_media_id=3200575220553829667&igsh=eTRsdHBzeHR0N24w" class="btn btn-primary">Profile</a>
             </div>
-            </div>
-                              </div>
+            </div> -->
+<!--                               </div> -->
+<!--           IGNORE next 4 lines -->
+      
                               <!-- <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
                                 <p>Some representative placeholder content for the first slide.</p>
                               </div> -->
-                            </div>
+
+          
+<!--                             </div>
                             <div class="carousel-item">
                               <div class="cards-wrapper">
                                   <div class="card">
@@ -143,8 +169,8 @@
             <div class="card">
               <div class="image-wrapper">
                   <img src="assets/img/Semiconductors2.jpg" class="card-img-top" alt="...">
-              </div>
-            <div class="card-body">
+              </div> -->
+<!--             <div class="card-body">
               <h5 class="card-title">Mr. ABC XYZ</h5>
               <p class="card-text">Assiatnt Professor</p>
               <a href="https://www.instagram.com/p/CxfJanxSSRb/?igsh=MXA1MGs0bTY1cWJxeQ==" class="btn btn-primary">Profile</a>
@@ -160,9 +186,9 @@
               <a href="https://www.instagram.com/p/CxTPH7-Swp0/?igsh=MWVsZGRoeDRoOTB6Ng==" class="btn btn-primary">Profile</a>
             </div>
             </div>
-                              </div>
+                              </div> -->
                
-                            </div>
+<!--                             </div>
                           </div>
                           <button class="carousel-control-prev" type="button" data-bs-target="#speakersCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -172,7 +198,8 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                           </button>
-                        </div>
+                        </div> -->
+          
                         <!-- Big screen carousel ends -->
 
      <!------------- Speakers Carousel ends here ----------->
