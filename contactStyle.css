@@ -255,7 +255,7 @@ html,body{
 
 
 /* Temporary code */
-.title-word {
+/* .title-word {
     animation: color-animation 4s linear infinite;
   }
   
@@ -263,9 +263,9 @@ html,body{
     --color-1: #DF8453;
     --color-2: #3D8DAE;
     --color-3: #E4A9A8;
-  }
+  } */
   
-  .title-word-2 {
+/*   .title-word-2 {
     --color-1: #DBAD4A;
     --color-2: #ACCFCB;
     --color-3: #17494D;
@@ -281,9 +281,9 @@ html,body{
     --color-1: #3D8DAE;
     --color-2: #DF8453;
     --color-3: #E4A9A8;
-  }
+  } */
   
-  @keyframes color-animation {
+/*   @keyframes color-animation {
     0%    {color: var(--color-1)}
     32%   {color: var(--color-1)}
     33%   {color: var(--color-2)}
@@ -291,11 +291,11 @@ html,body{
     66%   {color: var(--color-3)}
     99%   {color: var(--color-3)}
     100%  {color: var(--color-1)}
-  }
+  } */
   
   /* Here are just some visual styles. 🖌 */
   
-.temporary {
+/* .temporary {
     display: grid;
     place-items: center;  
     text-align: center;
@@ -309,7 +309,7 @@ html,body{
     font-size: 8.5vw;
     text-transform: uppercase;
 }
-
+ */
 
 
 
