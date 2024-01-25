@@ -4,11 +4,26 @@
   <style>.coming-soon-text {
     font-family: 'Monoton', cursive; /* Change font to Monoton */
     font-size: 40px;
-    color: white;
+    color: transparent;
     text-align: center;
     margin-top: 50px;
-    animation: bounceColorMotion 3s infinite; /* Animation for a combination of color change and bouncing effect */
-  }</style>
+    animation: effect 2s linear infinite;
+     /* Animation for a combination of color change and bouncing effect */
+  }
+  @keyframes effect {
+            0% {
+                background: linear-gradient(
+                        #008000, #00FF00);
+                -webkit-background-clip: text;
+            }
+ 
+            100% {
+                background: linear-gradient(
+                        orange, yellow
+                        );
+                -webkit-background-clip: text;
+            }
+        }</style>
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
