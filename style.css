@@ -39,12 +39,12 @@ body{
     background-position: center; /* This property centers the background image */
     height: 90vh;
     position: relative;
-    border: 2px solid greenyellow;
+
     
 
 }
 .main .box{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     opacity: 0.65;
     background-color: black;
