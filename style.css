@@ -138,6 +138,7 @@ nav .icons {
       left: 10px;
       font-size: 5px;
       padding: 15px;
+      padding-left: 30px;
       opacity: 0; /* Initial opacity set to 0 */
       max-height: 0; /* Initial max-height set to 0 */
       overflow: hidden;
