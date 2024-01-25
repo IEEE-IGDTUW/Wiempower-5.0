@@ -269,7 +269,7 @@ nav .icons {
     display: inline-block;
         /* font-size: 140px; */
         font-size: clamp(38px, 10vw, 140px);
-    margin-top: 100px;
+/*     margin-top: 100px; */
   }
   @keyframes textclip {
     to {
@@ -360,7 +360,7 @@ nav .icons {
 .teamImg img{
     flex-wrap: nowrap;
     display: block;
-      width: 20vw;
+      width: 35vw;
      margin-bottom: 15px;
        flex: 1;
        overflow: hidden;
@@ -375,6 +375,7 @@ nav .icons {
     font-size: 42px;
     text-shadow: #5a3c3c;
     padding: 10px;
+    
     color: white;
     /* border: 2px solid red; */
     font-family: 'Lilita One', sans-serif;
@@ -397,12 +398,13 @@ width: 100% ;
     font-family: 'Lilita One', sans-serif;
     flex: 2;
     box-sizing: border-box;
+    
     flex-direction: column; 
     background-color: rgba(8, 32, 50, 0.6);
     border-radius: 0.5rem;
     transition: ease-out 0.3s;
     padding: 0rem 0.5rem;
-    margin-left: 20px;
+    margin-left: 10px;
     line-height: 2rem;
     color: #eeeeee;
   }
@@ -449,6 +451,9 @@ width: 100% ;
 
 .speakersHeading{
     font-size: 50px;
+    font-family: 'Lilita One', sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(51, 73, 214);
     margin: auto;
     max-width: 50vw;
     /* align-items: center; */
@@ -461,6 +466,9 @@ width: 100% ;
 
 .actsHeading{
     font-size: 50px;
+    font-family: 'Lilita One', sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(51, 73, 214);
     margin: auto;
     max-width: 50vw;
     /* align-items: center; */
@@ -605,14 +613,7 @@ img{
 /* } */
 
 
-.coming-soon-text {
-  font-family: 'Monoton', cursive; /* Change font to Monoton */
-  font-size: 40px;
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-  animation: bounceColorMotion 3s infinite; /* Animation for a combination of color change and bouncing effect */
-}
+
 
 @keyframes bounceColorMotion {
   0%, 20%, 50%, 80%, 100% {
