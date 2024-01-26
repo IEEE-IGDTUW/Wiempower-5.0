@@ -250,6 +250,7 @@ nav .icons {
     font-family: 'Changa One', sans-serif;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 50px;
     background-image: linear-gradient(
       -225deg,
       #00f7bd 0%,
